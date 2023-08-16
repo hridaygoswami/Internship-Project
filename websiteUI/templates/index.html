@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Boston House Prediction ML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container" onclick="onclick">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="center">
+            <h2>Enter the <br> following Details</h2>
+            <form action="result" method="post">
+                {% csrf_token %}
+                <input type="text" inputmode="decimal" id="float-input1" name="float-input1" pattern="[0-9]*[.,]?[0-9]*"
+                    placeholder="% lower status of the population">
+                <input type="text" inputmode="decimal" id="float-input2" name="float-input2" pattern="[0-9]*[.,]?[0-9]*"
+                    placeholder="Average Number of Rooms per dwelling">
+                <input type="text" inputmode="decimal" id="float-input3" name="float-input3" pattern="[0-9]*[.,]?[0-9]*"
+                    placeholder="Pupil/Teacher Ratio by Town">
+                <input type="submit" value="Submit">
+            </form>
+            <h2>&nbsp;</h2>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://codepen.io/banik/pen/ReNNrO/3f837b2f0085b5125112fc455941ea94.js'></script>
+</body>
+
+</html>
