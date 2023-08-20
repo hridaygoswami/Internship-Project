@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% load static %} -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <title>CodePen - Pure CSS Glitchy Text Reveal 😎</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="{% static 'result.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'result.css' %}"> -->
+    <link rel="stylesheet" href="../static/result.css">
 
 </head>
 
@@ -15,7 +16,7 @@
     <div class="page">
         <p data-scroll="in">Your new house awaits at just ${{ val }}</p>
         <p class="reveal--2 words chars splitting" aria-hidden="true" data-scroll="in" data-splitting=""
-            style="--word-total:3; --char-total:20;"><span class="word" data-word="Random" style="--word-index:0;"><span
+            style="--word-total:3; --char-total:20;"><span class="word" data-word="Your" style="--word-index:0;"><span
                     class="char" data-char="Y"
                     style="--char-index:0; --count:1; --char-0:&quot;≥&quot;; --char-1:&quot;¶&quot;; --char-2:&quot;/&quot;; --char-3:&quot;˚&quot;; --char-4:&quot;░&quot;; --char-5:&quot;≤&quot;; --char-6:&quot;¢&quot;; --char-7:&quot;•&quot;; --char-8:&quot;≥&quot;; --char-9:&quot;˚&quot;;">Y</span><span
                     class="char" data-char="o"
@@ -23,41 +24,61 @@
                     class="char" data-char="u"
                     style="--char-index:2; --count:1; --char-0:&quot;░&quot;; --char-1:&quot;æ&quot;; --char-2:&quot;≥&quot;; --char-3:&quot;å&quot;; --char-4:&quot;÷&quot;; --char-5:&quot;–&quot;; --char-6:&quot;∫&quot;; --char-7:&quot;µ&quot;; --char-8:&quot;å&quot;; --char-9:&quot;▒&quot;;">u</span><span
                     class="char" data-char="r"
-                    style="--char-index:3; --count:4; --char-0:&quot;≈&quot;; --char-1:&quot;¬&quot;; --char-2:&quot;<&quot;; --char-3:&quot;…&quot;; --char-4:&quot;∞&quot;; --char-5:&quot;/&quot;; --char-6:&quot;?&quot;; --char-7:&quot;˙&quot;; --char-8:&quot;ß&quot;; --char-9:&quot;≈&quot;;">r</span><span
+                    style="--char-index:3; --count:4; --char-0:&quot;≈&quot;; --char-1:&quot;¬&quot;; --char-2:&quot;<&quot;; --char-3:&quot;…&quot;; --char-4:&quot;∞&quot;; --char-5:&quot;/&quot;; --char-6:&quot;?&quot;; --char-7:&quot;˙&quot;; --char-8:&quot;ß&quot;; --char-9:&quot;≈&quot;;">r</span>
+                    <!-- <span
                     class="char" data-char=""
                     style="--char-index:4; --count:4; --char-0:&quot;?&quot;; --char-1:&quot;™&quot;; --char-2:&quot;–&quot;; --char-3:&quot;/&quot;; --char-4:&quot;˚&quot;; --char-5:&quot;▒&quot;; --char-6:&quot;˜&quot;; --char-7:&quot;?&quot;; --char-8:&quot;░&quot;; --char-9:&quot;÷&quot;;"></span><span
                     class="char" data-char="awaits"
-                    style="--char-index:5; --count:4; --char-0:&quot;∆&quot;; --char-1:&quot;§&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∫&quot;; --char-4:&quot;µ&quot;; --char-5:&quot;™&quot;; --char-6:&quot;`&quot;; --char-7:&quot;§&quot;; --char-8:&quot;˙&quot;; --char-9:&quot;▓&quot;;">awaits</span></span><span
-                class="whitespace"> </span><span class="word" data-word="iteration" style="--word-index:1;"><span
-                    class="char" data-char=""
-                    style="--char-index:6; --count:3; --char-0:&quot;∆&quot;; --char-1:&quot;∂&quot;; --char-2:&quot;?&quot;; --char-3:&quot;¶&quot;; --char-4:&quot;░&quot;; --char-5:&quot;…&quot;; --char-6:&quot;`&quot;; --char-7:&quot;≤&quot;; --char-8:&quot;∆&quot;; --char-9:&quot;≠&quot;;"></span><span
-                    class="char" data-char="at"
-                    style="--char-index:7; --count:5; --char-0:&quot;˚&quot;; --char-1:&quot;∂&quot;; --char-2:&quot;¶&quot;; --char-3:&quot;˚&quot;; --char-4:&quot;>&quot;; --char-5:&quot;•&quot;; --char-6:&quot;`&quot;; --char-7:&quot;`&quot;; --char-8:&quot;>&quot;; --char-9:&quot;░&quot;;">at</span><span
-                    class="char" data-char=""
-                    style="--char-index:8; --count:3; --char-0:&quot;•&quot;; --char-1:&quot;≥&quot;; --char-2:&quot;•&quot;; --char-3:&quot;∫&quot;; --char-4:&quot;•&quot;; --char-5:&quot;/&quot;; --char-6:&quot;∆&quot;; --char-7:&quot;∆&quot;; --char-8:&quot;∞&quot;; --char-9:&quot;µ&quot;;"></span><span
-                    class="char" data-char="just"
-                    style="--char-index:9; --count:3; --char-0:&quot;¶&quot;; --char-1:&quot;ç&quot;; --char-2:&quot;>&quot;; --char-3:&quot;å&quot;; --char-4:&quot;¬&quot;; --char-5:&quot;≤&quot;; --char-6:&quot;∞&quot;; --char-7:&quot;≥&quot;; --char-8:&quot;˚&quot;; --char-9:&quot;>&quot;;">just</span><span
-                    class="char" data-char=""
-                    style="--char-index:10; --count:4; --char-0:&quot;ª&quot;; --char-1:&quot;™&quot;; --char-2:&quot;`&quot;; --char-3:&quot;…&quot;; --char-4:&quot;<&quot;; --char-5:&quot;√&quot;; --char-6:&quot;≥&quot;; --char-7:&quot;≠&quot;; --char-8:&quot;÷&quot;; --char-9:&quot;å&quot;;"></span><span
-                    class="char" data-char="$ {{ val }}"
-                    style="--char-index:11; --count:5; --char-0:&quot;¡&quot;; --char-1:&quot;≠&quot;; --char-2:&quot;˜&quot;; --char-3:&quot;æ&quot;; --char-4:&quot;…&quot;; --char-5:&quot;ƒ&quot;; --char-6:&quot;░&quot;; --char-7:&quot;ƒ&quot;; --char-8:&quot;√&quot;; --char-9:&quot;≥&quot;;">${{ val }}</span><span
-                    class="char" data-char=""
+                    style="--char-index:5; --count:4; --char-0:&quot;∆&quot;; --char-1:&quot;§&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∫&quot;; --char-4:&quot;µ&quot;; --char-5:&quot;™&quot;; --char-6:&quot;`&quot;; --char-7:&quot;§&quot;; --char-8:&quot;˙&quot;; --char-9:&quot;▓&quot;;">awaits</span></span> -->
+                    <span class="whitespace"> </span>
+                    <span class="word" data-word="house" style="--word-index:2;"><span class="char" data-char="h"
+                            style="--char-index:15; --count:2; --char-0:&quot;∞&quot;; --char-1:&quot;ç&quot;; --char-2:&quot;▓&quot;; --char-3:&quot;˚&quot;; --char-4:&quot;?&quot;; --char-5:&quot;∂&quot;; --char-6:&quot;/&quot;; --char-7:&quot;`&quot;; --char-8:&quot;£&quot;; --char-9:&quot;ß&quot;;">h</span><span
+                            class="char" data-char="o"
+                            style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">o</span><span class="char" data-char="u"
+                                style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">u</span><span class="char" data-char="s"
+                                    style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">s</span><span class="char" data-char="e"
+                                        style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">e</span>
+                    <span class="whitespace"> </span>
+
+                <span class="word" data-word="awaits" style="--word-index:1;"><span
+                    class="char" data-char="a"
+                    style="--char-index:6; --count:3; --char-0:&quot;∆&quot;; --char-1:&quot;∂&quot;; --char-2:&quot;?&quot;; --char-3:&quot;¶&quot;; --char-4:&quot;░&quot;; --char-5:&quot;…&quot;; --char-6:&quot;`&quot;; --char-7:&quot;≤&quot;; --char-8:&quot;∆&quot;; --char-9:&quot;≠&quot;;">a</span><span
+                    class="char" data-char="w"
+                    style="--char-index:7; --count:5; --char-0:&quot;˚&quot;; --char-1:&quot;∂&quot;; --char-2:&quot;¶&quot;; --char-3:&quot;˚&quot;; --char-4:&quot;>&quot;; --char-5:&quot;•&quot;; --char-6:&quot;`&quot;; --char-7:&quot;`&quot;; --char-8:&quot;>&quot;; --char-9:&quot;░&quot;;">w</span><span
+                    class="char" data-char="a"
+                    style="--char-index:8; --count:3; --char-0:&quot;•&quot;; --char-1:&quot;≥&quot;; --char-2:&quot;•&quot;; --char-3:&quot;∫&quot;; --char-4:&quot;•&quot;; --char-5:&quot;/&quot;; --char-6:&quot;∆&quot;; --char-7:&quot;∆&quot;; --char-8:&quot;∞&quot;; --char-9:&quot;µ&quot;;">a</span><span
+                    class="char" data-char="i"
+                    style="--char-index:9; --count:3; --char-0:&quot;¶&quot;; --char-1:&quot;ç&quot;; --char-2:&quot;>&quot;; --char-3:&quot;å&quot;; --char-4:&quot;¬&quot;; --char-5:&quot;≤&quot;; --char-6:&quot;∞&quot;; --char-7:&quot;≥&quot;; --char-8:&quot;˚&quot;; --char-9:&quot;>&quot;;">i</span><span
+                    class="char" data-char="t"
+                    style="--char-index:10; --count:4; --char-0:&quot;ª&quot;; --char-1:&quot;™&quot;; --char-2:&quot;`&quot;; --char-3:&quot;…&quot;; --char-4:&quot;<&quot;; --char-5:&quot;√&quot;; --char-6:&quot;≥&quot;; --char-7:&quot;≠&quot;; --char-8:&quot;÷&quot;; --char-9:&quot;å&quot;;">t</span><span
+                    class="char" data-char="s"
+                    style="--char-index:11; --count:5; --char-0:&quot;¡&quot;; --char-1:&quot;≠&quot;; --char-2:&quot;˜&quot;; --char-3:&quot;æ&quot;; --char-4:&quot;…&quot;; --char-5:&quot;ƒ&quot;; --char-6:&quot;░&quot;; --char-7:&quot;ƒ&quot;; --char-8:&quot;√&quot;; --char-9:&quot;≥&quot;;">s</span>
+                    <!-- <span class="char" data-char=""
                     style="--char-index:12; --count:3; --char-0:&quot;≈&quot;; --char-1:&quot;æ&quot;; --char-2:&quot;¬&quot;; --char-3:&quot;å&quot;; --char-4:&quot;¡&quot;; --char-5:&quot;▓&quot;; --char-6:&quot;÷&quot;; --char-7:&quot;≥&quot;; --char-8:&quot;░&quot;; --char-9:&quot;≈&quot;;">i</span><span
                     class="char" data-char=""
                     style="--char-index:13; --count:3; --char-0:&quot;>&quot;; --char-1:&quot;™&quot;; --char-2:&quot;∂&quot;; --char-3:&quot;∫&quot;; --char-4:&quot;æ&quot;; --char-5:&quot;░&quot;; --char-6:&quot;§&quot;; --char-7:&quot;•&quot;; --char-8:&quot;©&quot;; --char-9:&quot;©&quot;;">o</span><span
                     class="char" data-char=""
-                    style="--char-index:14; --count:5; --char-0:&quot;µ&quot;; --char-1:&quot;µ&quot;; --char-2:&quot;√&quot;; --char-3:&quot;º&quot;; --char-4:&quot;<&quot;; --char-5:&quot;ƒ&quot;; --char-6:&quot;∆&quot;; --char-7:&quot;™&quot;; --char-8:&quot;÷&quot;; --char-9:&quot;å&quot;;">n</span></span><span
-                class="whitespace"> </span><span class="word" data-word="count" style="--word-index:2;"><span
-                    class="char" data-char=""
-                    style="--char-index:15; --count:2; --char-0:&quot;∞&quot;; --char-1:&quot;ç&quot;; --char-2:&quot;▓&quot;; --char-3:&quot;˚&quot;; --char-4:&quot;?&quot;; --char-5:&quot;∂&quot;; --char-6:&quot;/&quot;; --char-7:&quot;`&quot;; --char-8:&quot;£&quot;; --char-9:&quot;ß&quot;;">c</span><span
-                    class="char" data-char=""
-                    style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">o</span><span
+                    style="--char-index:14; --count:5; --char-0:&quot;µ&quot;; --char-1:&quot;µ&quot;; --char-2:&quot;√&quot;; --char-3:&quot;º&quot;; --char-4:&quot;<&quot;; --char-5:&quot;ƒ&quot;; --char-6:&quot;∆&quot;; --char-7:&quot;™&quot;; --char-8:&quot;÷&quot;; --char-9:&quot;å&quot;;">n</span></span> -->
+                    <span class="whitespace"> </span>
+                    <span class="word" data-word="at" style="--word-index:2;"><span
+                    class="char" data-char="a"
+                    style="--char-index:15; --count:2; --char-0:&quot;∞&quot;; --char-1:&quot;ç&quot;; --char-2:&quot;▓&quot;; --char-3:&quot;˚&quot;; --char-4:&quot;?&quot;; --char-5:&quot;∂&quot;; --char-6:&quot;/&quot;; --char-7:&quot;`&quot;; --char-8:&quot;£&quot;; --char-9:&quot;ß&quot;;">a</span><span
+                    class="char" data-char="t"
+                    style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">t</span>
+                    <!-- <span
                     class="char" data-char=""
                     style="--char-index:17; --count:5; --char-0:&quot;≠&quot;; --char-1:&quot;▒&quot;; --char-2:&quot;∫&quot;; --char-3:&quot;§&quot;; --char-4:&quot;∂&quot;; --char-5:&quot;©&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;░&quot;; --char-8:&quot;<&quot;; --char-9:&quot;>&quot;;">u</span><span
                     class="char" data-char=""
                     style="--char-index:18; --count:3; --char-0:&quot;∆&quot;; --char-1:&quot;¡&quot;; --char-2:&quot;¢&quot;; --char-3:&quot;<&quot;; --char-4:&quot;¡&quot;; --char-5:&quot;ª&quot;; --char-6:&quot;µ&quot;; --char-7:&quot;>&quot;; --char-8:&quot;¬&quot;; --char-9:&quot;˚&quot;;">n</span><span
                     class="char" data-char=""
-                    style="--char-index:19; --count:2; --char-0:&quot;∫&quot;; --char-1:&quot;¡&quot;; --char-2:&quot;–&quot;; --char-3:&quot;÷&quot;; --char-4:&quot;ß&quot;; --char-5:&quot;<&quot;; --char-6:&quot;√&quot;; --char-7:&quot;∫&quot;; --char-8:&quot;ƒ&quot;; --char-9:&quot;ß&quot;;">t</span></span>
+                    style="--char-index:19; --count:2; --char-0:&quot;∫&quot;; --char-1:&quot;¡&quot;; --char-2:&quot;–&quot;; --char-3:&quot;÷&quot;; --char-4:&quot;ß&quot;; --char-5:&quot;<&quot;; --char-6:&quot;√&quot;; --char-7:&quot;∫&quot;; --char-8:&quot;ƒ&quot;; --char-9:&quot;ß&quot;;">t</span></span> -->
+                    <span class="whitespace"> </span>
+                    <span class="word" data-word="just" style="--word-index:2;"><span class="char" data-char="j"
+                            style="--char-index:15; --count:2; --char-0:&quot;∞&quot;; --char-1:&quot;ç&quot;; --char-2:&quot;▓&quot;; --char-3:&quot;˚&quot;; --char-4:&quot;?&quot;; --char-5:&quot;∂&quot;; --char-6:&quot;/&quot;; --char-7:&quot;`&quot;; --char-8:&quot;£&quot;; --char-9:&quot;ß&quot;;">j</span><span
+                            class="char" data-char="u"
+                            style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">u</span><span class="char" data-char="s"
+                                style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">s</span><span class="char" data-char="t"
+                                    style="--char-index:16; --count:3; --char-0:&quot;?&quot;; --char-1:&quot;>&quot;; --char-2:&quot;ç&quot;; --char-3:&quot;∞&quot;; --char-4:&quot;?&quot;; --char-5:&quot;…&quot;; --char-6:&quot;˙&quot;; --char-7:&quot;▒&quot;; --char-8:&quot;ç&quot;; --char-9:&quot;æ&quot;;">t</span>
         </p>
     </div>
     <!-- partial -->
